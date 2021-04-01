@@ -1070,7 +1070,9 @@ input {
 }
 
 .fixed-panel {
+  z-index: 1000;
   background: #fff;
+  position: relative;
 }
 
 @media (max-width: 1000px) {
@@ -1226,6 +1228,11 @@ input {
   .content-container {
     padding: 60px 0;
   }
+}
+
+.helper {
+  position: relative;
+  z-index: -1;
 }
 
 .content-panel {
