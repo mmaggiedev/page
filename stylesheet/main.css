@@ -1428,13 +1428,15 @@ input {
     margin-bottom: 30px;
   }
 }
-
+.skill-wrapper {
+   display: flex;
+}
 .skill-wrapper .title {
-  margin-top: 50px;
+
 }
 
 .skill-wrapper .skill-list-wrapper {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .skill-wrapper .skill-list-wrapper .item {
