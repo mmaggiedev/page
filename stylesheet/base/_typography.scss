@@ -1,0 +1,243 @@
+@font-face {
+    font-family: "Grotesk";
+    src: url(./fonts/NHG/NHaasGroteskDSPro-15UltTh.otf);
+    font-weight: 200;
+    font-style: thin;
+  }
+  @font-face {
+    font-family: "Grotesk";
+    src: url(./fonts/NHG/NHaasGroteskDSPro-25Th.otf);
+    font-weight: 300;
+    font-style: light;
+  }
+  @font-face {
+    font-family: "Grotesk";
+    src: url(./fonts/NHG/NHaasGroteskTXPro-55Rg.ttf);
+    font-weight: 400;
+    font-style: regular;
+  }
+  @font-face {
+    font-family: "Grotesk";
+    src: url(./fonts/NHG/NHaasGroteskTXPro-65Md.ttf);
+    font-weight: 500;
+    font-style: medium;
+  }
+
+  @font-face {
+    font-family: "sw";
+    src: url(./fonts/Suis/SuisseIntl-SemiBold.otf);
+    font-weight: 700;
+    font-style: bold;
+  }
+  @font-face {
+    font-family: "sw";
+    src: url(./fonts/Suis/SuisseIntl-Thin.otf);
+    font-weight: 200;
+    font-style: thin;
+  }
+  @font-face {
+    font-family: "sw";
+    src: url(./fonts/Suis/SuisseIntl-Light.otf);
+    font-weight: 300;
+    font-style: light;
+  }
+  @font-face {
+    font-family: "sw";
+    src: url(./fonts/Suis/SuisseIntl-Regular.otf);
+    font-weight: 400;
+    font-style: regular;
+  }
+
+
+  @font-face {
+    font-family: "Grotesk";
+    src: url(./fonts/NHG/NHaasGroteskTXPro-75Bd.ttf);
+    font-weight: 700;
+    font-style: bold;
+  }
+
+  
+  @font-face {
+    font-family: "HelveticaNowDisplay";
+    src: url(./fonts/HelveticaNowDisplay-ExtraBold.ttf);
+    font-weight: 700;
+    font-style: bold;
+  }
+  @font-face {
+    font-family: "TitlingGothicFB";
+    src: url(./fonts/TitlingGothicFB/TitlingGothicFBNor-Bold.otf);
+    font-weight: 700;
+    font-style: bold;
+  }
+  @font-face {
+    font-family: "HelveticaNeue";
+    src: url(./fonts/HelveticaNeue.ttc);
+    // font-weight: 700;
+    font-style: bold;
+  }
+// @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500,600,700|Source+Sans+Pro:300&display=swap');
+// .heading {
+//     font-family: 'Cormorant Garamond', serif; 
+// } 
+
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+// .typo-title {
+//     font-size: 2.8rem;
+//     font-weight: 400;
+//     line-height: 1;
+// }
+@media (min-width: $tablet){
+    .typo-title {
+        font-size: 3.2rem;
+        font-weight: 400;
+        line-height: 1;
+    }
+}
+
+@media (max-width: $tablet){
+    .typo-title {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1;
+    }
+}
+
+@media (min-width: $tablet){
+    .typo-h1 {
+        font-size: 2.2rem;
+        font-weight: 400;
+        line-height: 1;
+    }
+}
+
+@media (max-width: $tablet){
+    .typo-h1 {
+        font-size: 1.75rem;
+        font-weight: 400;
+        line-height: 1;
+    }
+}
+
+
+
+
+.typo-h2 {
+
+}
+.typo-body-xl {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+
+@media (min-width: $tablet){
+    .typo-body-xl {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    
+}
+
+@media (max-width: $tablet){
+    .typo-body-xl {
+        font-size: 1.35rem;
+        font-weight: 400;
+        line-height: 1;
+    }
+    
+}
+
+@media (min-width: $tablet){
+    .typo-body-l {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.25;
+    }
+}
+
+@media (max-width: $tablet){
+    .typo-body-l {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1;
+    }
+}
+
+
+@media (min-width: $tablet){
+    .typo-body-m {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.25;
+    }
+}
+
+@media (max-width: $tablet){
+    .typo-body-m {
+        font-size: 0.85rem;
+        font-weight: 400;
+        line-height: 1.25;
+    }
+}
+
+@media (min-width: $tablet){
+    .typo-body-s {
+        font-size: 0.85rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: $tablet){
+    .typo-body-s {
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+}
+
+
+
+@media (max-width: $tablet){
+    .brand-name {
+        font-size: 1.5rem;
+    }
+    .fixed-panel {
+        .intro-wrapper {
+            .main {
+                font-size: 1.25rem;
+                .smaller {
+                    font-size: 1rem;
+                }
+            }
+            .sub {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: $tablet){
+    .brand-name {
+        font-size: 1.5rem;
+    }
+    .fixed-panel {
+        .intro-wrapper {
+            .main {
+                font-size: 1.5rem;
+                .smaller {
+                    font-size: 1.25rem;
+                }
+            }
+            .sub {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+

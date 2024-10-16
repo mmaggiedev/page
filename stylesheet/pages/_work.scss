@@ -1,0 +1,234 @@
+.work-hero-container {
+    
+}
+.white-text{
+    color: rgba(255, 255, 255, 0.8);
+    .sub {
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+  //FULL SCREEN
+
+  .full-screen-cover {
+    height: 100vh;
+    min-height: 960px;
+    position: relative;
+  }
+  .full-screen-background {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 100px 40px;
+
+    .full-screen-container {
+        z-index: 2;
+        // position: absolute;
+        // bottom: 40px;
+        // left: 40px;
+    }
+
+  }
+
+  .full-screen-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 32%, rgba(0, 0, 0, 1) 100%);
+  }
+.back-cta {
+    margin-bottom: 120px;
+    display: inline-flex;
+    &:after {
+        background: #fff;
+    }
+}
+
+.work-hero-box {
+    .client-logo {
+        margin-bottom: 40px;
+    }
+    .work-text {
+        p {
+           
+            &:not(.no-margin){
+                margin: 28px 0;
+            }
+        }
+    }
+}
+.skill-box {
+    .sub {
+        // color: $black50;
+        display: flex;
+        margin-bottom: 8px;
+    }
+}
+.section-divider { 
+    .inner {
+        width: 100%;
+        height: 1px;
+        background: $black10;
+    }
+   
+}
+
+
+.detail-title {
+    margin-bottom: 40px;
+}
+
+.list-title {
+    margin-top: 32px;
+    font-weight: bold;
+}
+
+.bullet-list {
+    
+    .bullet-item {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $black10;
+        padding-top: 20px;
+    }
+}
+
+.work-highlight-box {
+    background: #f5f5f5;
+    align-items: center;
+    padding: 40px
+}
+
+.work-img {
+    display: flex;
+    &.with-caption {
+        flex-direction: column;
+    }
+    .figure-caption {
+        margin-top: 20px;
+    }
+}
+
+.view-more-list {
+    margin-top: 28px;
+}
+
+@media (min-width: $mobile){
+
+    .view-more-item {
+        flex: 0 0 32%;
+        max-width: 32%;
+    
+    }
+}
+@media (max-width: $mobile){
+
+    .view-more-item {
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+        flex: 0 0 100%;
+        max-width: 100%;
+    
+    }
+}
+.view-more-box {
+    display: flex;
+    height: 320px;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $black80;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .view-more-bg {
+        // background-size: cover;
+        filter: grayscale(1);
+    }
+    .view-more-logo {
+        z-index: 2;
+        position: relative;
+        .logo {
+            max-height: 44px;
+        }
+    }
+    .view-more-bg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    &:hover {
+        transform: scale(1.05);
+        transition: $transition-cubic;
+        .view-more-logo {
+            // transform: scale(1.1);
+            // transition: $transition-cubic;
+
+        }
+        .view-more-bg {
+           
+            // background-size: 200%;
+            // transition: $transition-cubic;
+        }
+    } 
+}
+.view-more-logo.custom {
+    position: relative;
+    
+    .first {
+        transform: translateY(-32px);
+    }
+    .second {
+        transform: translateY(32px);
+    }
+    .x-sign {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        transform: translate(-50%, -50%);
+        .left {
+            display: flex;
+            height: 32px;
+            width: 1px;
+            background: white;
+            transform: rotate(45deg);
+        }
+        .right {
+            display: flex;
+            height: 32px;
+            width: 1px;
+            background: white;
+            transform: rotate(-45deg);
+        }
+       
+    }
+}
+.fg-box {
+
+}
+
+.back-home-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #f5f5f5;
+}
+
+.full-width-img {
+    height: 300px;
+  }
+
+.view-more-section {
+    padding-bottom: 120px;
+}
