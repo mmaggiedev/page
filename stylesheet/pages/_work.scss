@@ -157,7 +157,7 @@
         z-index: 2;
         position: relative;
         .logo {
-            max-height: 44px;
+            max-height: 52px;
         }
     }
     .view-more-bg {
@@ -185,10 +185,10 @@
     position: relative;
     
     .first {
-        transform: translateY(-32px);
+        transform: translate(-12px, -32px);
     }
     .second {
-        transform: translateY(32px);
+        transform: translate(20px, 40px);
     }
     .x-sign {
         position: absolute;

@@ -1790,7 +1790,7 @@ input {
   position: relative;
 }
 .view-more-box .view-more-logo .logo {
-  max-height: 44px;
+  max-height: 52px;
 }
 .view-more-box .view-more-bg {
   display: flex;
@@ -1806,10 +1806,10 @@ input {
   position: relative;
 }
 .view-more-logo.custom .first {
-  transform: translateY(-32px);
+  transform: translate(-12px, -32px);
 }
 .view-more-logo.custom .second {
-  transform: translateY(32px);
+  transform: translate(20px, 40px);
 }
 .view-more-logo.custom .x-sign {
   position: absolute;
