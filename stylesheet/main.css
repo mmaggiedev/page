@@ -1073,7 +1073,6 @@ input {
   width: 100%;
   z-index: 1000;
   top: 0;
-  padding: 20px 0;
   background-color: rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(8px);
@@ -1082,6 +1081,16 @@ input {
   color: #fff;
 }
 
+@media (min-width: 700px) {
+  .fixed-header {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 700px) {
+  .fixed-header {
+    padding: 12px 0;
+  }
+}
 .blurred {
   position: absolute;
   top: 0;
@@ -1188,7 +1197,7 @@ input {
 }
 .mobile-menu-wrapper .menu-item {
   font-size: 2rem;
-  padding: 20px 40px;
+  padding: 20px 20px;
 }
 
 @media (min-width: 1000px) {
@@ -1358,13 +1367,13 @@ input {
 }
 @media (max-width: 700px) {
   .work-card {
-    margin: 80px 0;
+    margin: 28px 0;
   }
   .client-logo img {
     height: 32px;
   }
   .work-info .work-desc {
-    margin: 40px 0;
+    margin-top: 20px;
   }
   .work-img {
     margin-top: 28px;
@@ -1610,27 +1619,29 @@ input {
   left: 0;
 }
 
-.horizontal-wrapper {
-  overflow: hidden;
-  position: relative;
-}
-
-@media (max-width: 1366px) {
+@media (max-width: 1000px) {
   .horizontal-wrapper {
     padding: 0 20px;
   }
+  .work-box {
+    flex-wrap: wrap;
+  }
 }
-@media (min-width: 1366px) {
+@media (min-width: 1000px) {
   .horizontal-wrapper {
     padding: 0 40px;
+    overflow: hidden;
+    position: relative;
+  }
+  .work-box {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 40px;
+    width: 100vw;
   }
 }
 .work-box {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  width: 100vw;
-  gap: 40px;
 }
 
 @media (min-width: 1366px) {
@@ -1656,6 +1667,22 @@ input {
   flex-direction: row-reverse;
 }
 
+@media (min-width: 1000px) {
+  .custom-size-logo.first {
+    height: 60px;
+  }
+  .custom-size-logo.second {
+    height: 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .custom-size-logo.first {
+    height: 40px;
+  }
+  .custom-size-logo.second {
+    height: 32px;
+  }
+}
 .white-text {
   color: rgba(255, 255, 255, 0.8);
 }

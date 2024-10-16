@@ -43,10 +43,10 @@
                       
                         <div class="mobile-menu-wrapper">
                             <ul class="menu-list flex-box">
-                                <li class="menu-item"><a href="#workSection">work experience</a></li>
-                                <li class="menu-item"><a href="#aboutSection">about</a></li>
-                                <li class="menu-item"><a href="#researchSection"></a>research & publications</li>
-                                <li class="menu-item"><a href="#contactSection">contact</a></li>
+                                <li class="menu-item mobile"><a href="#workSection">work experience</a></li>
+                                <li class="menu-item mobile"><a href="#aboutSection">about</a></li>
+                                <li class="menu-item mobile"><a href="#researchSection"></a>research & publications</li>
+                                <li class="menu-item mobile"><a href="#contactSection">contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -147,10 +147,10 @@
                         <div class="work-info work-info-anim col-5">
                             <div class="client-logo-list">
                                 <div class="client-logo">
-                                    <img style="height: 60px;" src="asset/icon/FPT_Software_logo.svg"/>
+                                    <img class="custom-size-logo first" src="asset/icon/FPT_Software_logo.svg"/>
                                 </div>
                                 <div class="client-logo">
-                                    <img style="height: 40px;" src="asset/icon/GE_Vernova_logo.svg"/>
+                                    <img class="custom-size-logo second" src="asset/icon/GE_Vernova_logo.svg"/>
                                 </div>
                             </div>
                             
@@ -527,24 +527,31 @@
             gsap.registerPlugin(ScrollTrigger);
 
             let workCards = gsap.utils.toArray(".work-card");
-
-            gsap.to(workCards, {
-            // xPercent: -100 * (workCards.length - 1),
-            x: () => window.innerWidth - (workCards[0].offsetWidth * workCards.length) - 180,
-            // xPercent: -200,
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".work-section-anim",
-                start: "top 120px",
-                // markers: true,
-                pin: true,
-                scrub: 1,
-                invalidateOnRefresh: true,
-                snap: 1 / (workCards.length - 1),
-                // anticipatePin: 1,
-                end: () => "+=" + document.querySelector(".work-card").offsetWidth
-            }
+            ScrollTrigger.matchMedia({
+                "(min-width: 1024px)": function() {
+                    gsap.to(workCards, {
+                        // xPercent: -100 * (workCards.length - 1),
+                        x: () => window.innerWidth - (workCards[0].offsetWidth * workCards.length) - 180,
+                        // xPercent: -200,
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: ".work-section-anim",
+                            start: "top 120px",
+                            // markers: true,
+                            pin: true,
+                            scrub: 1,
+                            invalidateOnRefresh: true,
+                            snap: 1 / (workCards.length - 1),
+                            // anticipatePin: 1,
+                            end: () => "+=" + document.querySelector(".work-card").offsetWidth
+                        }
+                    });
+                },
+                "(max-width: 1023px)": function() {
+                    ScrollTrigger.clearScrollMemory(); 
+                }
             });
+
             console.log("width: " + document.querySelector(".work-card").offsetWidth);
 
             
@@ -666,9 +673,13 @@
             //CLICK TO SCROLL
             $(".menu-item").on("click", function(e) {
                 e.preventDefault(); // Prevent default anchor behavior
+                if($(this).hasClass("mobile")){
+                    $('.hamburger-menu').toggleClass('menu-open');
+                }
 
                 // Get the target section's ID from the href attribute
                 var targetSection = $(this).children("a").attr("href");
+                
                 console.log("scroll: " + targetSection);
 
                 // Animate scrolling to the section

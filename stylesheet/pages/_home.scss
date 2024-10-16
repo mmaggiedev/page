@@ -21,13 +21,23 @@
     // border-bottom: 1px solid #0e100f;
     z-index: 1000;
     top: 0;
-    padding: 20px 0;
+   
     // color: #fff;
     background-color: rgba(255, 255, 255, .15);
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(8px);
     &.white-first {
         color: #fff;
+    }
+}
+@media (min-width: $mobile){
+    .fixed-header {
+        padding: 20px 0;
+    }
+}
+@media (max-width: $mobile){
+    .fixed-header {
+        padding: 12px 0;
     }
 }
 
@@ -152,7 +162,7 @@
    
     .menu-item {
         font-size: 2rem;
-        padding: 20px 40px;
+        padding: 20px 20px;
     }
 }
 @media (min-width: $tablet){
@@ -379,14 +389,14 @@
 
 @media (max-width: $mobile){
     .work-card {
-        margin: 80px 0;
+        margin: 28px 0;
     }
     .client-logo img {
         height: 32px;
     }
     .work-info {
         .work-desc {
-            margin: 40px 0;
+            margin-top: 20px;
         }
     }
     .work-img {
@@ -690,27 +700,35 @@
   //HORIZONTAL WORK BOX
 
   .horizontal-wrapper {
-    overflow: hidden;
-      position: relative;
+   
     // background: #f5f5f5;
   }
-  @media (max-width: $desktop){
+  @media (max-width: $tablet){
     .horizontal-wrapper {
         padding: 0 20px;
     }
+    .work-box {
+        flex-wrap: wrap;
+    }
   }
-  @media (min-width: $desktop){
+  @media (min-width: $tablet){
     .horizontal-wrapper {
         padding: 0 40px;
+        overflow: hidden;
+        position: relative;
+    }
+    .work-box {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 40px;
+        width: 100vw;
     }
   }
   .work-box {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    width: 100vw;
+
     // overflow-x: scroll;
-    gap: 40px;
+
 
     // width: 100%;
   }
@@ -741,4 +759,26 @@
   .brand-logo-wrapper {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  @media (min-width: $tablet){
+    .custom-size-logo {
+        &.first {
+            height: 60px;
+        }
+        &.second {
+            height: 40px;
+        }
+    }
+  }
+
+  @media (max-width: $tablet){
+    .custom-size-logo {
+        &.first {
+            height: 40px;
+        }
+        &.second {
+            height: 32px;
+        }
+    }
   }
