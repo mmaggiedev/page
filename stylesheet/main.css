@@ -420,7 +420,7 @@ input {
 }
 @media (max-width: 700px) {
   .typo-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 400;
     line-height: 1;
   }
@@ -1315,12 +1315,6 @@ input {
 @media (min-width: 1000px) {
   .subtitle-list {
     align-items: center;
-  }
-}
-@media (max-width: 1000px) {
-  .subtitle-list {
-    display: none;
-    flex-direction: column;
   }
 }
 @media (max-width: 700px) {
