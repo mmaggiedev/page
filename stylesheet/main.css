@@ -406,7 +406,7 @@ input {
 }
 @media (min-width: 1000px) {
   .typo-title {
-    font-size: 3.2rem;
+    font-size: 5rem;
     font-weight: 400;
     line-height: 1;
   }
@@ -420,7 +420,7 @@ input {
 }
 @media (max-width: 700px) {
   .typo-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
     line-height: 1;
   }
@@ -1236,25 +1236,63 @@ input {
   }
 }
 .hero-section {
-  height: 100vh;
-  min-height: 980px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .hero-title {
   margin-bottom: 60px;
 }
 
-@media (min-width: 1180px) {
-  .hero-title {
-    max-width: 60%;
-  }
-}
 @media (min-width: 900px) and (max-width: 1180px) {
   .hero-title {
+    margin-top: 200px;
     max-width: 90%;
+  }
+}
+.hero-section {
+  height: 100vh;
+  min-height: 900px;
+}
+
+.hero-half-box {
+  position: relative;
+  height: calc(100% - 80px);
+}
+
+.hero-title {
+  margin-top: 120px;
+}
+
+.brand-list-wrapper {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 120px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+@media (min-width: 1366px) {
+  .hero-half-box {
+    position: relative;
+    height: calc(100% - 140px);
+  }
+  .hero-title {
+    margin-top: 200px;
+    max-width: 80%;
+  }
+  .hero-section {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 1366px) {
+  .hero-half-box {
+    position: relative;
+    height: calc(100% - 80px);
+  }
+  .hero-title {
+    margin-top: 120px;
+    max-width: 80%;
   }
 }
 .subtitle-list {
@@ -1283,13 +1321,6 @@ input {
   .subtitle-list {
     display: none;
     flex-direction: column;
-  }
-}
-@media (min-width: 700px) {
-  .brand-list-wrapper {
-    margin-top: 200px;
-    position: relative;
-    top: 100px;
   }
 }
 @media (max-width: 700px) {

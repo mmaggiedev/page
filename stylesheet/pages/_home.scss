@@ -165,6 +165,7 @@
         padding: 20px 20px;
     }
 }
+
 @media (min-width: $tablet){
     .hamburger-menu {
         display: none;
@@ -199,24 +200,73 @@
 }
 
 .hero-section {
-    height: 100vh;
-    min-height: 980px;
+   
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
 }
 
 .hero-title  {
     margin-bottom: 60px;
 }
-@media (min-width: 1180px){
-    .hero-title {
-        max-width: 60%
-    }
+@media (min-width: 1180px) and (max-width: $desktop){
+    // .hero-title {
+    //     margin-top: 120px;
+    //     max-width: 80%;
+    // }
 }
 @media (min-width: 900px) and (max-width: 1180px){
     .hero-title {
+        margin-top: 200px;
         max-width: 90%;
+    }
+}
+
+
+    .hero-section {
+        height: 100vh;
+        min-height: 900px;
+    }
+    .hero-half-box  {
+        position: relative;
+        height: calc(100% - 80px);
+    }
+    .hero-title {
+        margin-top: 120px;
+    }
+    .brand-list-wrapper {
+        border-top: 1px solid $black10;
+        // margin-top: 180px;
+        // margin-bottom: 120px;
+        position: absolute;
+        bottom: 120px;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+
+@media (min-width: $desktop){
+    .hero-half-box  {
+        position: relative;
+        height: calc(100% - 140px);
+    }
+    .hero-title {
+        margin-top: 200px;
+        max-width: 80%;
+       
+    }
+    .hero-section {
+        margin-bottom: 80px;
+    }
+}
+@media (max-width: $desktop){
+    .hero-half-box  {
+        position: relative;
+        height: calc(100% - 80px);
+    }
+    .hero-title {
+        margin-top: 120px;
+        max-width: 80%;
     }
 }
 
@@ -258,9 +308,9 @@
 
 @media (min-width: $mobile) {
     .brand-list-wrapper {
-        margin-top: 200px;
-        position: relative;
-        top: 100px;
+     
+        // position: relative;
+        // top: 100px;
     }
 }
 @media (max-width: $mobile) {
