@@ -209,7 +209,16 @@
 .hero-title  {
     margin-bottom: 60px;
 }
-
+@media (min-width: 1180px){
+    .hero-title {
+        max-width: 60%
+    }
+}
+@media (min-width: 900px) and (max-width: 1180px){
+    .hero-title {
+        max-width: 90%;
+    }
+}
 
 .subtitle-list {
     display: flex;

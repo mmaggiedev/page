@@ -411,9 +411,16 @@ input {
     line-height: 1;
   }
 }
-@media (max-width: 1000px) {
+@media (min-width: 700px) and (max-width: 1000px) {
   .typo-title {
-    font-size: 1.5rem;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+}
+@media (max-width: 700px) {
+  .typo-title {
+    font-size: 2rem;
     font-weight: 400;
     line-height: 1;
   }
@@ -1240,6 +1247,16 @@ input {
   margin-bottom: 60px;
 }
 
+@media (min-width: 1180px) {
+  .hero-title {
+    max-width: 60%;
+  }
+}
+@media (min-width: 900px) and (max-width: 1180px) {
+  .hero-title {
+    max-width: 90%;
+  }
+}
 .subtitle-list {
   display: flex;
   gap: 8px;
