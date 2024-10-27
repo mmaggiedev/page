@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="nhidtt">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nhi Dam</title>
     <link href="asset/icon/ND-FAVICON.png" rel="icon" type="image/x-icon">
@@ -493,6 +494,7 @@
                 gsap.to(".intro-overlay", {
                     delay: 3, // Delay before fading out the intro
                     duration: 0.85,
+                    opacity: 0,
                     y: -(windowHeight),
                     ease: "power2.inOut",
                     onComplete: function() {
